@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.jerry.layouttest.LogRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include
+        android:id="@+id/item_1"
+        layout="@layout/relative_item"
+        android:layout_width="match_parent"
+        android:layout_height="116dp" />
+
+    <include
+        android:id="@+id/item_2"
+        layout="@layout/relative_item"
+        android:layout_width="match_parent"
+        android:layout_height="116dp"
+        android:layout_below="@+id/item_1" />
+
+    <include
+        android:id="@+id/item_3"
+        layout="@layout/relative_item"
+        android:layout_width="match_parent"
+        android:layout_height="116dp"
+        android:layout_below="@+id/item_2" />
+</com.jerry.layouttest.LogRelativeLayout>

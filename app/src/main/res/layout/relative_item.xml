@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.jerry.layouttest.LogRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rl_first"
+    android:layout_width="match_parent"
+    android:layout_height="116dp"
+    android:paddingLeft="12dp"
+    android:paddingTop="8dp"
+    android:paddingRight="12dp"
+    android:paddingBottom="8dp">
+
+    <ImageView
+        android:id="@+id/iv_pic_1"
+        android:layout_width="80dp"
+        android:layout_height="100dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:src="#f88" />
+
+    <TextView
+        android:id="@+id/tv_top_text_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/iv_pic_1"
+        android:layout_marginLeft="8dp"
+        android:layout_toRightOf="@+id/iv_pic_1"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:text="文案文案文案文案文案"
+        android:textSize="16sp" />
+
+    <com.jerry.layouttest.LogRelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignTop="@+id/tv_top_text_1"
+        android:layout_alignBottom="@+id/tv_top_text_1"
+        android:layout_toRightOf="@+id/tv_top_text_1">
+
+        <ImageView
+            android:id="@+id/iv_first_tag_1"
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="4dp"
+            android:src="#88f" />
+
+        <ImageView
+            android:id="@+id/iv_second_tag_1"
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="4dp"
+            android:layout_toRightOf="@+id/iv_first_tag_1"
+            android:src="#88f" />
+
+        <ImageView
+            android:id="@+id/iv_third_tag_1"
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="4dp"
+            android:layout_toRightOf="@+id/iv_second_tag_1"
+            android:src="#88f" />
+    </com.jerry.layouttest.LogRelativeLayout>
+
+    <TextView
+        android:id="@+id/tv_center_text_1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_top_text_1"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_toRightOf="@+id/iv_pic_1"
+        android:maxLines="2"
+        android:text="文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/tv_bottom_left_text_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="8dp"
+        android:layout_toRightOf="@+id/iv_pic_1"
+        android:maxLines="1"
+        android:text="文案文案文案文案文案"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/tv_bottom_right_text_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:maxLines="1"
+        android:text="文案"
+        android:textSize="14sp" />
+</com.jerry.layouttest.LogRelativeLayout>
